@@ -5,5 +5,9 @@ get '/' do
 end
 
 get '/secret' do
-  "hello World!"
+  "This is a secret page"
+end
+
+get '/bigsecret' do
+  "Shhhh...."
 end
