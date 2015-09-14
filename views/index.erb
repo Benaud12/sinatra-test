@@ -1,9 +1,13 @@
 <div style='border: 3px solid green'>
   <% if @visitor %>
-    Hello, <%= @visitor %> <%=@visitor2%>!
-  <% end %>
-  <% if @name %>
-    My name is <%= @name %>
+    Hello, <%= @visitor %>!
+  <% else %>
+    <form action="/hello">
+      My name is <%= @name %>
+      What's your name?
+      <input type="text" name="name">
+      <input type="submit" value="Enter">
+    </form>
   <% end %>
   <img src='http://bit.ly/1eze8aE'>
 </div>
